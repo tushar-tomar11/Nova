@@ -51,7 +51,7 @@ export const BannerContent = ({
         </p>
         <Link
           className={LINK_TEXT_CLASSES}
-          href="https://docs.mango.markets/mango-markets/risks"
+          href="https://docs.nova.markets/risks"
           onClick={onClickLink}
           target="blank"
         >

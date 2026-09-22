@@ -4,7 +4,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 const FAQS = [
   {
     q: 'How do I participate in rewards?',
-    a: 'Simply by trading on Mango. Points are allocated for spot trades and swaps. Other actions may also earn points. The more volume you do the more points you earn. At the end of each week prizes are distributed to all wallets with points. The more points you have the more prizes you could win.',
+    a: 'Simply by trading on Nova. Points are allocated for spot trades and swaps. Other actions may also earn points. The more volume you do the more points you earn. At the end of each week prizes are distributed to all wallets with points. The more points you have the more prizes you could win.',
   },
   {
     q: 'What can I win?',
@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     q: 'What are the rewards tiers?',
-    a: "There are 4 rewards tiers. Everyone starts in the Seed tier. After your first Season is completed you'll be promoted to either the Mango or Whale tier (depending on the average notional value of your swaps/trades). Bots are automatically assigned to the Bots tier and will remain there.",
+    a: "There are 4 rewards tiers. Everyone starts in the Seed tier. After your first Season is completed you'll be promoted to either the Nova or Whale tier (depending on the average notional value of your swaps/trades). Bots are automatically assigned to the Bots tier and will remain there.",
   },
   {
     q: 'How do the prizes work?',
@@ -36,7 +36,7 @@ const Faqs = () => {
         Feel free to reach out to us on{' '}
         <a
           className="text-th-active"
-          href="https://discord.gg/2uwjsBc5yw"
+          href="https://discord.gg/novamarkets"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -238,7 +238,7 @@ const StatusBar = ({ collapsed }: { collapsed: boolean }) => {
         ) : null} */}
         <a
           className="flex items-center text-th-fgd-3 focus:outline-none md:hover:text-th-fgd-2"
-          href="https://docs.mango.markets"
+          href="https://docs.nova.markets"
           rel="noreferrer noopener"
           target="_blank"
         >
@@ -247,7 +247,7 @@ const StatusBar = ({ collapsed }: { collapsed: boolean }) => {
         </a>
         <a
           className="flex items-center text-th-fgd-3 focus:outline-none md:hover:text-th-fgd-2"
-          href="https://discord.gg/2uwjsBc5yw"
+          href="https://discord.gg/novamarkets"
           rel="noreferrer noopener"
           target="_blank"
         >
@@ -256,7 +256,7 @@ const StatusBar = ({ collapsed }: { collapsed: boolean }) => {
         </a>
         <a
           className="flex items-center text-th-fgd-3 focus:outline-none md:hover:text-th-fgd-2"
-          href="https://twitter.com/mangomarkets"
+          href="https://twitter.com/novamarkets"
           rel="noreferrer noopener"
           target="_blank"
         >

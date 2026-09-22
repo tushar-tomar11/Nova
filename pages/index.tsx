@@ -28,7 +28,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
   }
 }
 
-const metaTitle = 'Mango Markets | High-Performance Crypto Exchange'
+const metaTitle = 'Nova | High-Performance Crypto Exchange'
 const metaDescription =
   'Margin trade your favorite crypto assets on-chain. Groundbreaking risk management to keep your funds safe. A powerful DEX, powered by Solana.'
 
@@ -36,7 +36,7 @@ const Index: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Mango Markets</title>
+        <title>Nova</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta name="og:description" content={metaDescription} />

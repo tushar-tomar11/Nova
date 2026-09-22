@@ -12,6 +12,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#383629',
     Bonk: '#EE7C2F',
     Pepe: '#2B4521',
+    Nova: '#0C0E1D',
   },
   BKG2: {
     'Mango Classic': '#282433',
@@ -26,6 +27,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#474433',
     Bonk: '#DD7813',
     Pepe: '#375A2B',
+    Nova: '#13172F',
   },
   BKG3: {
     'Mango Classic': '#332e42',
@@ -40,6 +42,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#56523e',
     Bonk: '#E5B55D',
     Pepe: '#446E35',
+    Nova: '#1B2041',
   },
   BKG4: {
     'Mango Classic': '#3f3851',
@@ -54,6 +57,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#656049',
     Bonk: '#DDA131',
     Pepe: '#51833F',
+    Nova: '#222953',
   },
   FGD1: {
     'Mango Classic': '#E6E4EC',
@@ -68,6 +72,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#F3F1DD',
     Bonk: '#FFFEFA',
     Pepe: '#F0F7EE',
+    Nova: '#EAECF6',
   },
   FGD4: {
     'Mango Classic': '#9189ae',
@@ -82,6 +87,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#acaa8b',
     Bonk: '#F3E9AA',
     Pepe: '#88BD75',
+    Nova: '#7E8BC8',
   },
   BUTTON: {
     'Mango Classic': '#794CA9',
@@ -96,6 +102,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#7F7A62',
     Bonk: '#AC5039',
     Pepe: '#338415',
+    Nova: '#5740E7',
   },
   UP: {
     'Mango Classic': '#89B92A',
@@ -110,6 +117,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#4eaa27',
     Bonk: '#FAE34C',
     Pepe: '#50C11F',
+    Nova: '#82A626',
   },
   ACTIVE: {
     'Mango Classic': '#f1c84b',
@@ -124,6 +132,7 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#e7dc83',
     Bonk: '#332910',
     Pepe: '#FAE34C',
+    Nova: '#945EF3',
   },
   DOWN: {
     'Mango Classic': '#F84638',
@@ -138,5 +147,30 @@ export const COLORS: Record<string, Record<string, string>> = {
     Olive: '#ee392f',
     Bonk: '#C22E30',
     Pepe: '#DD6040',
+    Nova: '#D54E44',
   },
+}
+
+export const NOVA_COLORS = {
+  active: '#945EF3',
+  'active-dark': '#8546F1',
+  down: '#D54E44',
+  'down-dark': '#F73022',
+  'down-muted': '#8B3D37',
+  up: '#82A626',
+  'up-dark': '#638A2E',
+  'up-muted': '#587231',
+  'bkg-1': '#0C0E1D',
+  'bkg-2': '#13172F',
+  'bkg-3': '#1B2041',
+  'bkg-4': '#222953',
+  'fgd-1': '#EAECF6',
+  'fgd-2': '#C6CBE7',
+  'fgd-3': '#A2ABD7',
+  'fgd-4': '#7E8BC8',
+  button: '#5740E7',
+  'button-hover': '#432AE5',
+  error: '#F8473A',
+  success: '#84CE03',
+  warning: '#FF9C24',
 }

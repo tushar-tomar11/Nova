@@ -48,7 +48,7 @@ const PnlTooltipContent = ({
         </div>
       </div>
       <a
-        href="https://docs.mango.markets/mango-markets/settle-pnl"
+        href="https://docs.nova.markets/settle-pnl"
         target="_blank"
         rel="noopener noreferrer"
       >

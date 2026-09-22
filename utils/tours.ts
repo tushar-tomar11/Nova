@@ -61,10 +61,10 @@ const createAccountTour = (mangoAccountPk: string | undefined) => {
         element: '#account-chart',
         popover: {
           title: mangoAccountPk
-            ? 'Your Mango Net Worth'
+            ? 'Your Nova Net Worth'
             : 'Account value chart',
           description: mangoAccountPk
-            ? 'The value and trend of your Mango Account with quick action buttons.'
+            ? 'The value and trend of your Nova Account with quick action buttons.'
             : 'When you create your account a chart of the value will show here.',
         },
       },
@@ -103,7 +103,7 @@ const createAccountTour = (mangoAccountPk: string | undefined) => {
       {
         element: '#account-explore-tabs',
         popover: {
-          title: 'Explore Mango',
+          title: 'Explore Nova',
           description:
             'Stats on our listed tokens and markets and your followed accounts. Visit the leaderboard to start finding accounts to follow.',
         },

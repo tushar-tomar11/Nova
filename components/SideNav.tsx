@@ -395,7 +395,7 @@ const SideNav = ({ collapsed }: { collapsed: boolean }) => {
                   collapsed={false}
                   icon={<DocumentTextIcon className="h-4 w-4" />}
                   title={t('documentation')}
-                  pagePath="https://docs.mango.markets"
+                  pagePath="https://docs.nova.markets"
                   hideIconBg
                   isExternal
                 />
@@ -419,7 +419,7 @@ const SideNav = ({ collapsed }: { collapsed: boolean }) => {
                   collapsed={false}
                   icon={<NewspaperIcon className="h-4 w-4" />}
                   title={t('terms-of-use')}
-                  pagePath="https://docs.mango.markets/legal"
+                  pagePath="https://docs.nova.markets/legal"
                   hideIconBg
                   isExternal
                 />
@@ -427,7 +427,7 @@ const SideNav = ({ collapsed }: { collapsed: boolean }) => {
                   collapsed={false}
                   icon={<ExclamationTriangleIcon className="h-4 w-4" />}
                   title={t('risks')}
-                  pagePath="https://docs.mango.markets/mango-markets/risks"
+                  pagePath="https://docs.nova.markets/risks"
                   hideIconBg
                   isExternal
                 />
@@ -439,7 +439,7 @@ const SideNav = ({ collapsed }: { collapsed: boolean }) => {
               collapsed={collapsed}
               icon={<QuestionMarkCircleIcon className="h-5 w-5" />}
               title={t('feedback')}
-              pagePath="https://mangomarkets.canny.io/feedback"
+              pagePath="https://nova.markets/feedback"
               isExternal
             />
             <div className="z-10 mt-2 border-t border-th-bkg-3 bg-th-bkg-1">

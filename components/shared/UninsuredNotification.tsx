@@ -22,7 +22,7 @@ const UninsuredNotification = ({ name }: { name: string | undefined }) => {
             </span>
           </Tooltip>{' '}
           <a
-            href="https://docs.mango.markets/mango-markets/socialized-losses"
+            href="https://docs.nova.markets/socialized-losses"
             target="_blank"
             rel="noopener noreferrer"
           >

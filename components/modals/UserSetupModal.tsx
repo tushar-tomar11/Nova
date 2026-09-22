@@ -273,7 +273,7 @@ const UserSetupModal = ({
         />
         <img
           className={`absolute left-6 top-6 h-10 w-10 shrink-0`}
-          src="/logos/logo-mark.svg"
+          src="/icons/nova-logo.svg"
           alt="next"
         />
         <div className="absolute left-0 top-0 z-10 flex h-1.5 w-full grow bg-th-bkg-3">
@@ -287,7 +287,7 @@ const UserSetupModal = ({
         <div className="relative z-10 col-span-1 flex flex-col items-center justify-center p-6 pt-24">
           {connected && mangoAccountLoading ? (
             <div className="flex h-full flex-col items-center justify-center">
-              <BounceLoader loadingMessage="Connecting to Mango..." />
+              <BounceLoader loadingMessage="Connecting to Nova..." />
             </div>
           ) : (
             <>
@@ -330,7 +330,7 @@ const UserSetupModal = ({
                         <span className="mr-1">{t('accept-terms-desc')}</span>
                         <a
                           className="flex items-center"
-                          href="https://docs.mango.markets/legal/terms-of-use"
+                          href="https://docs.nova.markets/legal/terms-of-use"
                           rel="noopener noreferrer"
                           target="_blank"
                         >
@@ -340,7 +340,7 @@ const UserSetupModal = ({
                         <span className="mx-1">and</span>
                         <a
                           className="flex items-center"
-                          href="https://docs.mango.markets/mango-markets/risks"
+                          href="https://docs.nova.markets/risks"
                           rel="noopener noreferrer"
                           target="_blank"
                         >

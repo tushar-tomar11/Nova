@@ -3,6 +3,7 @@ import { ModalProps } from '../../types/modal'
 import Modal from '../shared/Modal'
 import WormholeBridge from '@wormhole-foundation/wormhole-connect'
 import { COLORS } from 'styles/colors'
+import { DEFAULT_MAINNET_RPC } from 'utils/rpcUrl'
 
 const BridgeModal = ({ isOpen, onClose }: ModalProps) => {
   const { theme } = useThemeWrapper()
@@ -22,8 +23,7 @@ const BridgeModal = ({ isOpen, onClose }: ModalProps) => {
               config={{
                 env: 'mainnet',
                 rpcs: {
-                  solana:
-                    'https://mango.rpcpool.com/946ef7337da3f5b8d3e4a34e7f88',
+                  solana: DEFAULT_MAINNET_RPC,
                 },
                 customTheme: {
                   primary: {

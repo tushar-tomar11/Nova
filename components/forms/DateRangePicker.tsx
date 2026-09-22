@@ -1,6 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import { useTranslation } from 'next-i18next'
-import { enUS } from 'date-fns/locale'
+import enUS from 'date-fns/locale/en-US/index.js'
 import { DateChangeCallBack, DateRangePicker } from 'react-nice-dates'
 import Label from './Label'
 

@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "yarn ci && yarn build",
+  "outputDirectory": ".next"
+}

@@ -315,7 +315,7 @@ const ListToken = ({ goBack }: { goBack: () => void }) => {
           .publicKey.toBase58(),
         marketIndex: index,
         openBookMarketExternalPk: marketPk?.toBase58() || '',
-        proposalTitle: `List ${tokenInfo.symbol} on Mango-v4`,
+        proposalTitle: `List ${tokenInfo.symbol} on Nova`,
         listForSwapOnly: false,
         fastListing: false,
       })

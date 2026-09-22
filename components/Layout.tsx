@@ -32,7 +32,7 @@ import { useTheme } from 'next-themes'
 import PromoBanner from './rewards/PromoBanner'
 import { useRouter } from 'next/router'
 import StatusBar from './StatusBar'
-import WarningBanner, { BannerContent } from './shared/WarningBanner'
+import WarningBanner from './shared/WarningBanner'
 import useMangoAccountAccounts from 'hooks/useMangoAccountAccounts'
 import TokenSlotsWarningModal, {
   WARNING_LEVEL,
@@ -168,12 +168,6 @@ const Layout = ({ children }: { children: ReactNode }) => {
           <TopBar />
           {asPath !== '/rewards' ? <PromoBanner /> : null}
           <NewListingBanner />
-          <BannerContent
-            additionalWrapperClasses="bg-th-warning"
-            additionalTextClasses="!text-xl"
-            text={`Mango Markets will be shutting down. Make sure to close your positions before they are forcibly closed next month (February).`}
-            linkText=""
-          />
           <div className="pb-12 md:pb-[27px]">
             {children}
             <WarningBanner />

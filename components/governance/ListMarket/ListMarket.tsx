@@ -409,7 +409,7 @@ const ListMarket = ({ goBack }: { goBack: () => void }) => {
                   <li>
                     {t('market-name-convention-6')}
                     <a
-                      href="https://discord.gg/2uwjsBc5yw"
+                      href="https://discord.gg/novamarkets"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

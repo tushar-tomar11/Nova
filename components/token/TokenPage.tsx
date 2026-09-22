@@ -195,7 +195,7 @@ const TokenPage = () => {
                   {cmsTokenData?.length ? (
                     <a
                       className="mb-2 flex cursor-pointer items-center text-th-fgd-3 md:hover:text-th-fgd-2"
-                      href={`https://mango.markets/explore/tokens/${cmsTokenData[0]?.slug}`}
+                      href={`https://nova.markets/explore/tokens/${cmsTokenData[0]?.slug}`}
                       rel="noopener noreferrer"
                       target="_blank"
                     >

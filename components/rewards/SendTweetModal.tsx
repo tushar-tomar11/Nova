@@ -7,7 +7,7 @@ import { MegaphoneIcon } from '@heroicons/react/20/solid'
 const SendTweetModal = ({ isOpen, onClose }: ModalProps) => {
   const handleTwitterShare = () => {
     const shareText =
-      'Another week, another round of @mangomarkets rewards unlocked! #mangorewards'
+      'Another week, another round of @novamarkets rewards unlocked! #novarewards'
     const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
       shareText,
     )}`
@@ -23,7 +23,7 @@ const SendTweetModal = ({ isOpen, onClose }: ModalProps) => {
         </div>
         <h2 className="mb-2 text-center">Share your win on X</h2>
         <p className="text-center text-base">
-          Include the hashtag #mangorewards for the chance to earn bonus
+          Include the hashtag #novarewards for the chance to earn bonus
           rewards.
         </p>
         <Button

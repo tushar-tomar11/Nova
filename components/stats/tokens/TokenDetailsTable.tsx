@@ -178,7 +178,7 @@ const TokenDetailsTable = () => {
                           {t('trade:tooltip-insured', { tokenOrMarket: '' })}
                           <a
                             className="mt-2 flex items-center"
-                            href="https://docs.mango.markets/mango-markets/insurance-fund"
+                            href="https://docs.nova.markets/insurance-fund"
                             rel="noopener noreferrer"
                             target="_blank"
                           >
@@ -396,7 +396,7 @@ const TokenDetailsTable = () => {
                                   })}
                                   <a
                                     className="mt-2 flex items-center"
-                                    href="https://docs.mango.markets/mango-markets/insurance-fund"
+                                    href="https://docs.nova.markets/insurance-fund"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                   >
@@ -461,7 +461,7 @@ export const CollateralFundingFeeTooltip = () => {
         you&apos;ll pay.
       </p>
       <a
-        href="https://docs.mango.markets/mango-markets/fees"
+        href="https://docs.nova.markets/fees"
         target="_blank"
         rel="noopener noreferrer"
       >

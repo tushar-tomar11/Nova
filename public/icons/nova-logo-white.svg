@@ -1,0 +1,7 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="12" fill="#0C0E1D"/>
+  <path d="M24 6L26.1 19.65L39 24L26.1 28.35L24 42L21.9 28.35L9 24L21.9 19.65L24 6Z" fill="#945EF3"/>
+  <path d="M24 13.5L25.125 21.375L33 24L25.125 26.625L24 34.5L22.875 26.625L15 24L22.875 21.375L24 13.5Z" fill="#16D5F3"/>
+  <circle cx="24" cy="24" r="3.4" fill="#EAECF6"/>
+  <text x="62" y="33" fill="#EAECF6" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="1.2">NOVA</text>
+</svg>

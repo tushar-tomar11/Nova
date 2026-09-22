@@ -99,7 +99,7 @@ const AccountOverview = () => {
               <div className={EMPTY_STATE_WRAPPER_CLASSES}>
                 <div className="flex flex-col items-center">
                   <FaceSmileIcon className="mb-2 h-6 w-6 text-th-fgd-4" />
-                  <p className="mb-4">Create a Mango Account to get started</p>
+                  <p className="mb-4">Create a Nova Account to get started</p>
                   <Button onClick={() => setShowCreateAccountModal(true)}>
                     {t('create-account')}
                   </Button>

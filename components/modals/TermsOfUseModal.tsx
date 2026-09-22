@@ -15,7 +15,7 @@ const TermsOfUseModal = ({ isOpen, onClose }: ModalProps) => {
           <span className="mr-1">{t('accept-terms-desc')}</span>
           <a
             className="flex items-center"
-            href="https://docs.mango.markets/legal/terms-of-use"
+            href="https://docs.nova.markets/legal/terms-of-use"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -25,7 +25,7 @@ const TermsOfUseModal = ({ isOpen, onClose }: ModalProps) => {
           <span className="mx-1">and</span>
           <a
             className="flex items-center"
-            href="https://docs.mango.markets/mango-markets/risks"
+            href="https://docs.nova.markets/risks"
             rel="noopener noreferrer"
             target="_blank"
           >

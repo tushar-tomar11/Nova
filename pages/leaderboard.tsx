@@ -21,15 +21,15 @@ export async function getStaticProps({ locale }: { locale: string }) {
   }
 }
 
-const metaTitle = 'Leaderboard | Top Traders on Mango'
+const metaTitle = 'Leaderboard | Top Traders on Nova'
 const metaDescription =
-  "Check out the best traders on Mango. Sort by PnL and account value. You can even view accounts to learn trading strategies from Mango's best traders."
+  "Check out the best traders on Nova. Sort by PnL and account value. You can even view accounts to learn trading strategies from Nova's best traders."
 
 const Leaderboard: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Leaderboard | Mango Markets</title>
+        <title>Leaderboard | Nova</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta name="og:description" content={metaDescription} />

@@ -25,9 +25,9 @@ export async function getStaticProps({ locale }: { locale: string }) {
   }
 }
 
-const metaTitle = 'Rewards | Be Rewarded for Trading on Mango'
+const metaTitle = 'Rewards | Be Rewarded for Trading on Nova'
 const metaDescription =
-  'Earn crypto and NFT rewards every week for trading on Mango. Getting started is easy and all participants earn rewards.'
+  'Earn crypto and NFT rewards every week for trading on Nova. Getting started is easy and all participants earn rewards.'
 
 const Rewards: NextPage = () => {
   const { data: isWhiteListed } = useIsWhiteListed()
@@ -35,7 +35,7 @@ const Rewards: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Rewards | Mango Markets</title>
+        <title>Rewards | Nova</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta name="og:description" content={metaDescription} />

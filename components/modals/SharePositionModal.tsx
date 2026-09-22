@@ -98,8 +98,8 @@ const SharePositionModal = ({
               <div className="px-8">
                 <img
                   className="mb-8 h-7 w-auto shrink-0"
-                  src="/logos/logo-with-text.svg"
-                  alt="Mango"
+                  src="/icons/nova-logo-white.svg"
+                  alt="Nova"
                 />
                 <div className="mb-4 flex items-center">
                   <p
@@ -157,7 +157,7 @@ const SharePositionModal = ({
             <a
               href={`https://twitter.com/intent/tweet?text=I'm ${side.toUpperCase()} %24${
                 market.name
-              } on %40mangomarkets%0A[PASTE IMAGE HERE]`}
+              } on %40novamarkets%0A[PASTE IMAGE HERE]`}
               target="_blank"
               rel="noreferrer"
             >

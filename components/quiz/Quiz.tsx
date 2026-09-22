@@ -183,7 +183,7 @@ const Quiz = ({ quiz }: { quiz: QuizType }) => {
                     ? 'Rewards Points Claimed'
                     : mangoAccountAddress
                     ? `Score ${quiz.questions.length}/${quiz.questions.length} to earn rewards points`
-                    : 'Create a Mango Account to earn rewards points'}
+                    : 'Create a Nova Account to earn rewards points'}
                 </p>
               </div>
             </>

@@ -194,7 +194,7 @@ const CloseAccountModal = ({ isOpen, onClose }: ModalProps) => {
             </div>
             <a
               className="flex items-center"
-              href="https://mangomarkets.canny.io/feedback"
+              href="https://nova.markets/feedback"
               target="_blank"
               rel="noopener noreferrer"
             >

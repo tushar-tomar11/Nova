@@ -98,7 +98,7 @@ const Trade: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Trade | Mango Markets</title>
+        <title>Trade | Nova</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta name="og:description" content={metaDescription} />

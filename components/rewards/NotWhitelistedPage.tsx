@@ -9,7 +9,7 @@ const NotWhitelistedPage = () => {
             Trade. Win. Repeat.
           </h1>
           <p className="max-w-2xl text-center text-base leading-snug text-th-fgd-2 lg:text-xl">
-            Earn rewards every week by trading on Mango. More points equals more
+            Earn rewards every week by trading on Nova. More points equals more
             chances to win big.
           </p>
         </div>
@@ -23,7 +23,7 @@ const NotWhitelistedPage = () => {
           <p className="text-center text-base">
             Keep an eye on our{' '}
             <a
-              href="https://twitter.com/mangomarkets"
+              href="https://twitter.com/novamarkets"
               target="_blank"
               rel="noopener noreferrer"
             >

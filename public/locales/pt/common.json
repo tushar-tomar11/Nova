@@ -2,7 +2,7 @@
   "404-heading": "Esta página foi liquidada",
   "404-description": "ou, nunca existiu...",
   "accept-terms": "Aceitar Termos",
-  "accept-terms-desc": "Eu li e aceito o Mango",
+  "accept-terms-desc": "Eu li e aceito o Nova",
   "account": "Conta",
   "account-closed": "Conta Fechada 👋",
   "account-balance": "Saldo da Conta",
@@ -51,7 +51,7 @@
   "collateral-value": "Valor do Colateral",
   "confirm": "Confirmar",
   "confirm-jurisdiction": "Confirmar Jurisdição",
-  "confirm-jurisdiction-desc": "É contra nossos Termos de Serviço usar o Mango se você é residente, cidadão ou está localizado em qualquer uma das seguintes jurisdições.",
+  "confirm-jurisdiction-desc": "É contra nossos Termos de Serviço usar o Nova se você é residente, cidadão ou está localizado em qualquer uma das seguintes jurisdições.",
   "confirm-non-restricted-jurisdiction": "Confirmo que, não sou residente, cidadão ou estou localizado em uma jurisdição proibida",
   "connect": "Conectar",
   "connect-balances": "Conecte-se para ver seus saldos",
@@ -59,7 +59,7 @@
   "copy-address": "Copiar Endereço",
   "copy-address-success": "Endereço copiado: {{pk}}",
   "country-not-allowed": "País {{country}} Não Permitido",
-  "country-not-allowed-tooltip": "Você está usando uma interface de usuário de código aberto facilitada pelo DAO Mango. Como tal, restringe o acesso a certas regiões por excesso de cautela, devido à incerteza regulatória.",
+  "country-not-allowed-tooltip": "Você está usando uma interface de usuário de código aberto facilitada pelo DAO Nova. Como tal, restringe o acesso a certas regiões por excesso de cautela, devido à incerteza regulatória.",
   "create-account": "Criar Conta",
   "creating-account": "Criando Conta...",
   "cumulative-interest-value": "Juros Acumulados",
@@ -108,7 +108,7 @@
   "health-tooltip": "Projeta a saúde da sua conta antes de você fazer um comércio. O primeiro valor é a saúde atual da sua conta e o segundo a saúde projetada da sua conta.",
   "history": "Histórico",
   "funding": "Financiamento",
-  "insufficient-sol": "Solana requer 0.041 SOL de aluguel para criar uma Conta Mango. Isso será devolvido se você fechar sua conta.",
+  "insufficient-sol": "Solana requer 0.041 SOL de aluguel para criar uma Conta Nova. Isso será devolvido se você fechar sua conta.",
   "interest-earned": "Juros Ganho",
   "interest-earned-paid": "Juros Ganho",
   "latest-ui-commit": "Último Commit da UI",
@@ -123,8 +123,8 @@
   "loan-origination-fee": "Taxa de Originação de Empréstimo",
   "loan-origination-fee-tooltip": "Taxa de {{fee}} para abertura de um empréstimo",
   "manage": "Gerenciar Slots",
-  "mango": "Mango",
-  "mango-stats": "Estatísticas Mango",
+  "mango": "Nova",
+  "mango-stats": "Estatísticas Nova",
   "market": "Mercado",
   "markets": "Mercados",
   "max": "Máx",
@@ -231,5 +231,4 @@
   "using-ledger": "Usando Ledger",
   "sign-to-in-app-notifications": "Assinar para notificações no aplicativo",
   "max-deposit": "Maximum Deposit"
- }
- 
+}

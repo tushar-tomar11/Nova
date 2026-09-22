@@ -151,7 +151,7 @@ const MoreMenuPanel = ({
         />
         <MoreMenuItem
           title={t('learn')}
-          path="https://docs.mango.markets/"
+          path="https://docs.nova.markets/"
           icon={<DocumentTextIcon className="h-5 w-5" />}
           isExternal
         />
@@ -169,14 +169,14 @@ const MoreMenuPanel = ({
         /> */}
         <MoreMenuItem
           title={t('terms-of-use')}
-          path="https://docs.mango.markets/legal"
+          path="https://docs.nova.markets/legal"
           icon={<NewspaperIcon className="h-5 w-5" />}
           isExternal
         />
         <MoreMenuItem
           icon={<ExclamationTriangleIcon className="h-5 w-5" />}
           title={t('risks')}
-          path="https://docs.mango.markets/mango-markets/risks"
+          path="https://docs.nova.markets/risks"
           isExternal
         />
       </div>

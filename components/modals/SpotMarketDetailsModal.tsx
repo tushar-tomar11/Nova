@@ -98,7 +98,7 @@ const SpotMarketDetailsModal = ({
                   })}
                   <a
                     className="mt-2 flex items-center"
-                    href="https://docs.mango.markets/mango-markets/insurance-fund"
+                    href="https://docs.nova.markets/insurance-fund"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -126,7 +126,7 @@ const SpotMarketDetailsModal = ({
                   })}
                   <a
                     className="mt-2 flex items-center"
-                    href="https://docs.mango.markets/mango-markets/insurance-fund"
+                    href="https://docs.nova.markets/insurance-fund"
                     rel="noopener noreferrer"
                     target="_blank"
                   >

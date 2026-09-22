@@ -1453,7 +1453,7 @@ export const DashboardNavbar = () => {
                 : ''
             } cursor-pointer border-r border-th-bkg-3 px-6 py-4`}
           >
-            Mango Account
+            Nova Account
           </h4>
         </Link>
       </div>

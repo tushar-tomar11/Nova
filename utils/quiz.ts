@@ -400,13 +400,13 @@ export const quizzes = [
   {
     name: 'Account Health',
     id: 2,
-    description: 'Learn how account health works on Mango.',
+    description: 'Learn how account health works on Nova.',
     intro: {
       title: 'Health is Wealth',
       description:
         'Understanding account health is very important. Take a few minutes to check out the Docs before taking the quiz.',
       docs: {
-        url: 'https://docs.mango.markets/mango-markets/health-overview',
+        url: 'https://docs.nova.markets/health-overview',
         linkText: 'Read the Health Docs',
       },
     },

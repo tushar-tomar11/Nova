@@ -31,7 +31,7 @@ const Swap: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Margin Swap | Mango Markets</title>
+        <title>Margin Swap | Nova</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta name="og:description" content={metaDescription} />

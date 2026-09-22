@@ -199,7 +199,7 @@ const Season = ({
             Trade. Win. Repeat.
           </h1>
           <p className="mb-6 max-w-2xl text-center text-base leading-snug text-th-fgd-2 lg:text-xl">
-            Earn rewards every week by trading on Mango. More points equals more
+            Earn rewards every week by trading on Nova. More points equals more
             chances to win big.
           </p>
           <button

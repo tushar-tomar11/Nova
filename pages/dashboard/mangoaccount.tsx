@@ -103,7 +103,7 @@ const MangoAccountDashboard: NextPage = () => {
           </div>
           {group && mangoAccount ? (
             <div className="mx-4 mt-4 lg:mx-0">
-              <h2 className="mb-6">Mango Account</h2>
+              <h2 className="mb-6">Nova Account</h2>
 
               <KeyValuePair
                 label="Address"

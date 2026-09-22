@@ -43,7 +43,7 @@ const TokenLogo = ({
           bank?.name === 'MSOL' ? (
             <>
               <p className="mb-2">
-                Earn MNDE tokens for holding your mSOL on Mango
+                Earn MNDE tokens for holding your mSOL on Nova
               </p>
               <a
                 href="https://marinade.finance/blog/let-marinade-earn-season-2-begin/"
@@ -56,7 +56,7 @@ const TokenLogo = ({
           ) : bank?.name === 'bSOL' ? (
             <>
               <p className="mb-2">
-                Earn BLZE tokens for holding your bSOL on Mango
+                Earn BLZE tokens for holding your bSOL on Nova
               </p>
               <a
                 href="https://rewards.solblaze.org/"

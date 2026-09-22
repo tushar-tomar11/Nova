@@ -20,15 +20,15 @@ export async function getStaticProps({ locale }: { locale: string }) {
   }
 }
 
-const metaTitle = 'Search Accounts | Mango Markets'
+const metaTitle = 'Search Accounts | Nova'
 const metaDescription =
-  'Trading accounts on Mango can be viewed via search. You can view and follow accounts to learn from their trading strategies.'
+  'Trading accounts on Nova can be viewed via search. You can view and follow accounts to learn from their trading strategies.'
 
 const Search: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Search Accounts | Mango Markets</title>
+        <title>Search Accounts | Nova</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta name="og:description" content={metaDescription} />

@@ -7,18 +7,21 @@ import useLocalStorageState from 'hooks/useLocalStorageState'
 import { useTranslation } from 'next-i18next'
 import { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react'
 import { PRIORITY_FEE_KEY, RPC_PROVIDER_KEY } from 'utils/constants'
+import {
+  DEFAULT_MAINNET_RPC,
+  isLegacyHostedRpc,
+  TRITON_DEDICATED_URL,
+} from 'utils/rpcUrl'
 import { SETTINGS_BUTTON_TITLE_CLASSES } from './AccountSettings'
 
-export const TRITON_DEDICATED_URL = process.env.NEXT_PUBLIC_TRITON_TOKEN
-  ? `https://mango.rpcpool.com/${process.env.NEXT_PUBLIC_TRITON_TOKEN}`
-  : 'https://mango.rpcpool.com/946ef7337da3f5b8d3e4a34e7f88'
+export { TRITON_DEDICATED_URL }
 
 export const LITE_RPC_URL = `https://rpc.mngo.cloud/kqy2ep1ovw9g/`
 
 const RPC_URLS = [
   {
-    label: 'Triton Shared',
-    value: process.env.NEXT_PUBLIC_ENDPOINT || TRITON_DEDICATED_URL,
+    label: 'Default',
+    value: DEFAULT_MAINNET_RPC,
   },
   {
     label: 'Triton Dedicated',
@@ -52,6 +55,13 @@ const RpcSettings = () => {
   )
   const [storedPriorityFeeLevel, setStoredPriorityFeeLevel] =
     useLocalStorageState(PRIORITY_FEE_KEY, DEFAULT_PRIORITY_FEE_LEVEL)
+
+  useEffect(() => {
+    if (isLegacyHostedRpc(rpcEndpointProvider)) {
+      setRpcEndpointProvider(DEFAULT_MAINNET_RPC)
+      actions.updateConnection(DEFAULT_MAINNET_RPC)
+    }
+  }, [actions, rpcEndpointProvider, setRpcEndpointProvider])
   // const [storedUseOrderbookFeed, setStoredUseOrderbookFeed] =
   //   useLocalStorageState(USE_ORDERBOOK_FEED_KEY, true)
 

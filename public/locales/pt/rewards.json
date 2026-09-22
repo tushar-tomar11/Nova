@@ -1,7 +1,7 @@
 {
-    "bot": "Bot",
-    "connect-wallet": "Conectar Carteira",
-    "mango": "Mango",
-    "seed": "Semente",
-    "whale": "Baleia"
+  "bot": "Bot",
+  "connect-wallet": "Conectar Carteira",
+  "mango": "Nova",
+  "seed": "Semente",
+  "whale": "Baleia"
 }

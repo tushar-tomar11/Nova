@@ -64,8 +64,8 @@ module.exports = withSentryConfig(
     // Suppresses source map uploading logs during build
     silent: true,
 
-    org: 'mango',
-    project: 'mango-v4-ui',
+    org: 'nova',
+    project: 'nova-dex-ui',
   },
   {
     // For all available options, see:

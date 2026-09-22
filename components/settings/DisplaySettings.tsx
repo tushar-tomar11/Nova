@@ -52,6 +52,7 @@ const LANGS = [
 ]
 
 const DEFAULT_THEMES = [
+  'nova',
   'light',
   'medium',
   'dark',

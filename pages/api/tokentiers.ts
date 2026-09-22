@@ -6,6 +6,7 @@ import {
   LISTING_PRESETS,
   getMidPriceImpacts,
 } from '@blockworks-foundation/mango-v4-settings/lib/helpers/listingTools'
+import { TRITON_DEDICATED_URL } from 'utils/rpcUrl'
 
 interface TokenDetails {
   reduceOnly?: number
@@ -35,10 +36,6 @@ interface CurrentTier {
   currentTier?: string
   collateralFeesPerDay?: number
 }
-
-export const TRITON_DEDICATED_URL = process.env.NEXT_PUBLIC_TRITON_TOKEN
-  ? `https://mango.rpcpool.com/${process.env.NEXT_PUBLIC_TRITON_TOKEN}`
-  : 'https://mango.rpcpool.com/946ef7337da3f5b8d3e4a34e7f88'
 
 type CurrentTiersResponse = CurrentTier[]
 

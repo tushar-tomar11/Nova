@@ -27,7 +27,7 @@ import {
   WalletConnectWalletAdapter,
 } from '@solana/wallet-adapter-wallets'
 import { SolflareWalletAdapter } from '@solana/wallet-adapter-solflare'
-import { clusterApiUrl } from '@solana/web3.js'
+import { DEFAULT_MAINNET_RPC } from 'utils/rpcUrl'
 import TransactionNotification from '@components/notifications/TransactionNotification'
 import { ThemeProvider, useTheme } from 'next-themes'
 import { appWithTranslation } from 'next-i18next'
@@ -56,7 +56,7 @@ const queryClient = new QueryClient()
 // Top level state hydrating/updating should go in MangoProvider
 function MyApp({ Component, pageProps }: AppProps) {
   const network = WalletAdapterNetwork.Mainnet
-  const endpoint = useMemo(() => clusterApiUrl(network), [network])
+  const endpoint = useMemo(() => DEFAULT_MAINNET_RPC, [])
   const router = useRouter()
   const wallets = useMemo(() => {
     return [
@@ -100,18 +100,25 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="apple-touch-icon"
-          sizes="192x192"
+          sizes="180x180"
           href="/apple-touch-icon.png"
         />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#0C0E1D" />
+        <meta name="theme-color" content="#0C0E1D" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@novamarkets" />
         <meta
           name="twitter:image"
-          content="https://app.mango.markets/images/1200x600-share.png?34567879"
+          content="https://app.nova.markets/images/1200x600-share.png?34567879"
+        />
+        <meta
+          property="og:image"
+          content="https://app.nova.markets/images/1200x600-share.png?34567879"
         />
         <meta name="google" content="notranslate" />
         <link rel="manifest" href="/manifest.json"></link>
@@ -124,7 +131,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             autoConnect={autoConnect}
           >
             <MangoProvider />
-            <ThemeProvider defaultTheme="Mango Classic" storageKey={THEME_KEY}>
+            <ThemeProvider defaultTheme="Nova" storageKey={THEME_KEY}>
               <PageTitle />
               <Layout>
                 <Telemetry />
@@ -169,7 +176,7 @@ const Telemetry = () => {
 
   return (
     <PlausibleProvider
-      domain="app.mango.markets"
+      domain="app.nova.markets"
       customDomain="https://pl.mngo.cloud"
       trackLocalhost={true}
       selfHosted={true}
@@ -208,8 +215,8 @@ const PageTitle = () => {
     market && selectedMarket && router.pathname == '/trade'
       ? `${price?.toFixed(getDecimalCount(market.tickSize))} ${
           selectedMarket.name
-        } - Mango`
-      : 'Mango Markets'
+        } - Nova`
+      : 'Nova'
 
   return (
     <Head>

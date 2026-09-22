@@ -25,13 +25,13 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 const metaTitle = 'Stats | TVL, Volume, Fees and More'
-const metaDescription = 'All the stats you need to keep track of Mango v4.'
+const metaDescription = 'All the stats you need to keep track of Nova.'
 
 const Stats: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Stats | Mango Markets</title>
+        <title>Stats | Nova</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta name="og:description" content={metaDescription} />

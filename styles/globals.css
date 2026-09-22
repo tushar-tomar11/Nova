@@ -75,32 +75,32 @@ th {
 /* Theme */
 
 :root {
-  --active: theme('colors.light-theme.active.DEFAULT');
-  --active-dark: theme('colors.light-theme.active.dark');
-  --down: theme('colors.light-theme.down.DEFAULT');
-  --down-dark: theme('colors.light-theme.down.dark');
-  --down-muted: theme('colors.light-theme.down.muted');
-  --up: theme('colors.light-theme.up.DEFAULT');
-  --up-dark: theme('colors.light-theme.up.dark');
-  --up-muted: theme('colors.light-theme.up.muted');
-  --link: theme('colors.light-theme.link.DEFAULT');
-  --link-hover: theme('colors.light-theme.link.hover');
-  --bkg-1: theme('colors.light-theme.bkg-1');
-  --bkg-2: theme('colors.light-theme.bkg-2');
-  --bkg-3: theme('colors.light-theme.bkg-3');
-  --bkg-4: theme('colors.light-theme.bkg-4');
-  --fgd-1: theme('colors.light-theme.fgd-1');
-  --fgd-2: theme('colors.light-theme.fgd-2');
-  --fgd-3: theme('colors.light-theme.fgd-3');
-  --fgd-4: theme('colors.light-theme.fgd-4');
-  --button: theme('colors.light-theme.button.DEFAULT');
-  --input-bkg: theme('colors.light-theme.input.bkg');
-  --input-border: theme('colors.light-theme.input.border');
-  --input-border-hover: theme('colors.light-theme.input.borderDark');
-  --button-hover: theme('colors.light-theme.button.hover');
-  --error: theme('colors.light-theme.error');
-  --success: theme('colors.light-theme.success');
-  --warning: theme('colors.light-theme.warning');
+  --active: theme('colors.nova-theme.active.DEFAULT');
+  --active-dark: theme('colors.nova-theme.active.dark');
+  --down: theme('colors.nova-theme.down.DEFAULT');
+  --down-dark: theme('colors.nova-theme.down.dark');
+  --down-muted: theme('colors.nova-theme.down.muted');
+  --up: theme('colors.nova-theme.up.DEFAULT');
+  --up-dark: theme('colors.nova-theme.up.dark');
+  --up-muted: theme('colors.nova-theme.up.muted');
+  --link: theme('colors.nova-theme.link.DEFAULT');
+  --link-hover: theme('colors.nova-theme.link.hover');
+  --bkg-1: theme('colors.nova-theme.bkg-1');
+  --bkg-2: theme('colors.nova-theme.bkg-2');
+  --bkg-3: theme('colors.nova-theme.bkg-3');
+  --bkg-4: theme('colors.nova-theme.bkg-4');
+  --fgd-1: theme('colors.nova-theme.fgd-1');
+  --fgd-2: theme('colors.nova-theme.fgd-2');
+  --fgd-3: theme('colors.nova-theme.fgd-3');
+  --fgd-4: theme('colors.nova-theme.fgd-4');
+  --button: theme('colors.nova-theme.button.DEFAULT');
+  --input-bkg: theme('colors.nova-theme.input.bkg');
+  --input-border: theme('colors.nova-theme.input.border');
+  --input-border-hover: theme('colors.nova-theme.input.borderDark');
+  --button-hover: theme('colors.nova-theme.button.hover');
+  --error: theme('colors.nova-theme.error');
+  --success: theme('colors.nova-theme.success');
+  --warning: theme('colors.nova-theme.warning');
 }
 
 [data-theme='Dark'] {
@@ -420,6 +420,35 @@ th {
   --error: theme('colors.pepe-theme.error');
   --success: theme('colors.pepe-theme.success');
   --warning: theme('colors.pepe-theme.warning');
+}
+
+[data-theme='Nova'] {
+  --active: theme('colors.nova-theme.active.DEFAULT');
+  --active-dark: theme('colors.nova-theme.active.dark');
+  --down: theme('colors.nova-theme.down.DEFAULT');
+  --down-dark: theme('colors.nova-theme.down.dark');
+  --down-muted: theme('colors.nova-theme.down.muted');
+  --up: theme('colors.nova-theme.up.DEFAULT');
+  --up-dark: theme('colors.nova-theme.up.dark');
+  --up-muted: theme('colors.nova-theme.up.muted');
+  --link: theme('colors.nova-theme.link.DEFAULT');
+  --link-hover: theme('colors.nova-theme.link.hover');
+  --bkg-1: theme('colors.nova-theme.bkg-1');
+  --bkg-2: theme('colors.nova-theme.bkg-2');
+  --bkg-3: theme('colors.nova-theme.bkg-3');
+  --bkg-4: theme('colors.nova-theme.bkg-4');
+  --fgd-1: theme('colors.nova-theme.fgd-1');
+  --fgd-2: theme('colors.nova-theme.fgd-2');
+  --fgd-3: theme('colors.nova-theme.fgd-3');
+  --fgd-4: theme('colors.nova-theme.fgd-4');
+  --button: theme('colors.nova-theme.button.DEFAULT');
+  --button-hover: theme('colors.nova-theme.button.hover');
+  --input-bkg: theme('colors.nova-theme.input.bkg');
+  --input-border: theme('colors.nova-theme.input.border');
+  --input-border-hover: theme('colors.nova-theme.input.borderDark');
+  --error: theme('colors.nova-theme.error');
+  --success: theme('colors.nova-theme.success');
+  --warning: theme('colors.nova-theme.warning');
 }
 
 /* Base */

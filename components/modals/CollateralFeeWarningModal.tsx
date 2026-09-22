@@ -48,7 +48,7 @@ const CollateralFeeWarningModal = ({ isOpen, onClose }: WarningProps) => {
       </h2>
       <a
         className="mb-6 flex justify-center text-base font-bold focus:outline-none"
-        href="https://docs.mango.markets/mango-markets/fees"
+        href="https://docs.nova.markets/fees"
         target="_blank"
         rel="noopener noreferrer"
       >

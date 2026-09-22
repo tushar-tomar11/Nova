@@ -24,15 +24,15 @@ export async function getStaticProps({ locale }: { locale: string }) {
   }
 }
 
-const metaTitle = 'Borrow Crypto on Mango Markets'
+const metaTitle = 'Borrow Crypto on Nova'
 const metaDescription =
-  'Securely borrow your favorite crypto assets to sell or use in DeFi. Mango makes borrowing easy and secure with multiple collateral options and a robust risk engine.'
+  'Securely borrow your favorite crypto assets to sell or use in DeFi. Nova makes borrowing easy and secure with multiple collateral options and a robust risk engine.'
 
 const Borrow: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Borrow | Mango Markets</title>
+        <title>Borrow | Nova</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta name="og:description" content={metaDescription} />

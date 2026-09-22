@@ -72,9 +72,9 @@ import { PerpMarket } from '@blockworks-foundation/mango-v4'
 import perpPositionsUpdater from './perpPositionsUpdater'
 import {
   DEFAULT_PRIORITY_FEE,
-  LITE_RPC_URL,
   TRITON_DEDICATED_URL,
 } from '@components/settings/RpcSettings'
+import { DEFAULT_MAINNET_RPC, resolveStoredMainnetRpc } from 'utils/rpcUrl'
 import {
   IExecutionLineAdapter,
   IOrderLineAdapter,
@@ -88,8 +88,8 @@ import { TxCallbackOptions } from '@blockworks-foundation/mango-v4/dist/types/sr
 const ENDPOINTS = [
   {
     name: 'mainnet-beta',
-    url: process.env.NEXT_PUBLIC_ENDPOINT || TRITON_DEDICATED_URL,
-    websocket: process.env.NEXT_PUBLIC_ENDPOINT || TRITON_DEDICATED_URL,
+    url: DEFAULT_MAINNET_RPC,
+    websocket: DEFAULT_MAINNET_RPC,
     custom: false,
   },
   {
@@ -156,16 +156,20 @@ const initMangoClient = (
 const createBackupConnections = (
   primaryConnection: Connection,
 ): Connection[] => {
-  const liteRpcConnection = new Connection(LITE_RPC_URL)
-  const backupConnections = [
-    liteRpcConnection,
-    new Connection('https://idalina-qy4oxi-fast-mainnet.helius-rpc.com/'),
-  ]
-  if (primaryConnection.rpcEndpoint !== TRITON_DEDICATED_URL) {
-    const conn = new Connection(TRITON_DEDICATED_URL)
-    backupConnections.push(conn)
+  const backups: Connection[] = []
+  const primaryUrl = primaryConnection.rpcEndpoint
+  const addIfUseful = (url?: string) => {
+    if (!url || url === primaryUrl || url.includes('rpc.mngo.cloud')) return
+    if (url.includes('mango.rpcpool.com') && !process.env.NEXT_PUBLIC_TRITON_TOKEN) {
+      return
+    }
+    backups.push(new Connection(url))
   }
-  return backupConnections
+  addIfUseful(DEFAULT_MAINNET_RPC)
+  if (process.env.NEXT_PUBLIC_TRITON_TOKEN) {
+    addIfUseful(TRITON_DEDICATED_URL)
+  }
+  return backups
 }
 
 export const DEFAULT_TRADE_FORM: TradeForm = {
@@ -342,7 +346,7 @@ const mangoStore = create<MangoStore>()(
       const urlFromLocalStorage = localStorage.getItem(RPC_PROVIDER_KEY)
       const swapMarginFromLocalStorage = localStorage.getItem(SWAP_MARGIN_KEY)
       rpcUrl = urlFromLocalStorage
-        ? JSON.parse(urlFromLocalStorage)
+        ? resolveStoredMainnetRpc(JSON.parse(urlFromLocalStorage))
         : ENDPOINT.url
       swapMargin = swapMarginFromLocalStorage
         ? JSON.parse(swapMarginFromLocalStorage)
@@ -606,7 +610,11 @@ const mangoStore = create<MangoStore>()(
             })
           } catch (e) {
             notify({ type: 'info', title: 'Unable to refresh data' })
-            console.error('Error fetching group', e)
+            console.error(
+              'Error fetching group',
+              get().connection.rpcEndpoint,
+              e,
+            )
           }
         },
         reloadMangoAccount: async (confirmationSlot) => {

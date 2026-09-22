@@ -7,6 +7,7 @@ import { getClient, getGroupForClient } from './utils'
 import { Group, MangoClient } from '@blockworks-foundation/mango-v4'
 import { getFormattedBankValues } from 'utils/governance/listingTools'
 import { MANGO_MAINNET_GROUP } from 'utils/constants'
+import { DEFAULT_MAINNET_RPC } from 'utils/rpcUrl'
 
 describe('Bank formatting function', () => {
   let client: MangoClient
@@ -14,9 +15,7 @@ describe('Bank formatting function', () => {
 
   // Asynchronous setup before all tests
   beforeAll(async () => {
-    const connection = new Connection(
-      'https://mango.rpcpool.com/946ef7337da3f5b8d3e4a34e7f88',
-    )
+    const connection = new Connection(DEFAULT_MAINNET_RPC)
     client = await getClient(connection)
     group = await getGroupForClient(client, MANGO_MAINNET_GROUP)
   })
