@@ -1,5 +1,5 @@
 {
   "framework": "nextjs",
-  "buildCommand": "yarn ci && yarn build",
+  "buildCommand": "tar -xzC public -f vendor/charting_library.tgz && tar -xzC public -f vendor/datafeeds.tgz && yarn build",
   "outputDirectory": ".next"
 }
