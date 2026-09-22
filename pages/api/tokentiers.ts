@@ -6,7 +6,6 @@ import {
   LISTING_PRESETS,
   getMidPriceImpacts,
 } from '@blockworks-foundation/mango-v4-settings/lib/helpers/listingTools'
-import { TRITON_DEDICATED_URL } from 'utils/rpcUrl'
 
 interface TokenDetails {
   reduceOnly?: number
