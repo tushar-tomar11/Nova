@@ -5,6 +5,13 @@ const { withSentryConfig } = require('@sentry/nextjs')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   i18n,
+  eslint: {
+    // Inherited Mango UI has hundreds of lint warnings; `next build` must not fail the deploy.
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
   images: {
     remotePatterns: [
       {

@@ -18,7 +18,7 @@
     "postinstall": "tar -xzC public -f vendor/charting_library.tgz;tar -xzC public -f vendor/datafeeds.tgz"
   },
   "engines": {
-    "node": ">=20"
+    "node": "20.x"
   },
   "dependencies": {
     "@blockworks-foundation/mango-feeds": "0.1.7",
