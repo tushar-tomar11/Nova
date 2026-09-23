@@ -578,9 +578,9 @@ const ListToken = ({ goBack }: { goBack: () => void }) => {
 
     if (voter.voteWeight.cmp(minVoterWeight) === -1) {
       notify({
-        title: `${t('on-boarding-description', {
+        title: t('on-boarding-description', {
           amount: formatNumericValue(mintVoterWeightNumber),
-        })} ${t('mango-governance')}`,
+        }),
         type: 'error',
       })
       return

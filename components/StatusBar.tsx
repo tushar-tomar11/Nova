@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import Tps, { StatusDot } from './Tps'
 import DiscordIcon from './icons/DiscordIcon'
 import { TwitterIcon } from './icons/TwitterIcon'
-import { DocumentTextIcon, MapIcon } from '@heroicons/react/20/solid'
+import { MapIcon } from '@heroicons/react/20/solid'
 import { useEffect, useMemo, useState } from 'react'
 import { IDL } from '@blockworks-foundation/mango-v4'
 import RpcPing from './RpcPing'
@@ -236,15 +236,6 @@ const StatusBar = ({ collapsed }: { collapsed: boolean }) => {
             <span>Powered by TradingView</span>
           </a>
         ) : null} */}
-        <a
-          className="flex items-center text-th-fgd-3 focus:outline-none md:hover:text-th-fgd-2"
-          href="https://docs.nova.markets"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          <DocumentTextIcon className="mr-1 h-3 w-3" />
-          <span>{t('docs')}</span>
-        </a>
         <a
           className="flex items-center text-th-fgd-3 focus:outline-none md:hover:text-th-fgd-2"
           href="https://discord.gg/novamarkets"

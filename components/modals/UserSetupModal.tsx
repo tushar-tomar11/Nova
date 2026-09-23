@@ -1,7 +1,6 @@
 import { Transition } from '@headlessui/react'
 import {
   ArrowDownTrayIcon,
-  ArrowTopRightOnSquareIcon,
   CheckCircleIcon,
   ChevronDownIcon,
   ExclamationCircleIcon,
@@ -326,28 +325,7 @@ const UserSetupModal = ({
                       checked={termsAccepted}
                       onChange={(e) => setTermsAccepted(e.target.checked)}
                     >
-                      <p className="flex flex-wrap">
-                        <span className="mr-1">{t('accept-terms-desc')}</span>
-                        <a
-                          className="flex items-center"
-                          href="https://docs.nova.markets/legal/terms-of-use"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          {t('terms-of-use')}
-                          <ArrowTopRightOnSquareIcon className="ml-1 h-4 w-4 shrink-0" />
-                        </a>
-                        <span className="mx-1">and</span>
-                        <a
-                          className="flex items-center"
-                          href="https://docs.nova.markets/risks"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          {t('risks')}
-                          <ArrowTopRightOnSquareIcon className="ml-1 h-4 w-4 shrink-0" />
-                        </a>
-                      </p>
+                      <p className="flex flex-wrap">{t('agree-and-continue')}</p>
                     </Checkbox>
                   </div>
                   <Button

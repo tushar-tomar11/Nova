@@ -39,14 +39,7 @@ const OnBoarding = ({ minVotes }: { minVotes?: BN }) => {
           <>
             {t('on-boarding-description', {
               amount: formatNumericValue(mintVoterWeightNumber),
-            })}{' '}
-            <a
-              href="https://dao.mango.markets"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('mango-governance')}
-            </a>
+            })}
           </>
         }
         desc={`${t('on-boarding-deposit-info')} ${t(

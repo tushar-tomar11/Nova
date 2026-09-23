@@ -36,19 +36,6 @@ const ListMarketOrTokenPage = () => {
             <ul className="mb-6">
               <li className="mb-2 flex items-center text-base">
                 <InformationCircleIcon className="mr-2 h-5 w-5 shrink-0 text-th-fgd-4" />
-                <span>
-                  {t('before-listing-1')}{' '}
-                  <a
-                    href="https://dao.mango.markets"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {t('mango-governance')}
-                  </a>
-                </span>
-              </li>
-              <li className="mb-2 flex items-center text-base">
-                <InformationCircleIcon className="mr-2 h-5 w-5 shrink-0 text-th-fgd-4" />
                 {t('before-listing-3')}
               </li>
               <li className="mb-2 flex items-center text-base">

@@ -1390,17 +1390,6 @@ export const DashboardNavbar = () => {
         </Link>
       </div>
       <div>
-        <Link href={'/dashboard/risks'} shallow={true}>
-          <h4
-            className={`${
-              asPath === '/dashboard/risks' ? 'bg-th-bkg-2 text-th-active' : ''
-            } cursor-pointer border-r border-th-bkg-3 px-6 py-4`}
-          >
-            Risks
-          </h4>
-        </Link>
-      </div>
-      <div>
         <Link href={'/dashboard/slippage'} shallow={true}>
           <h4
             className={`${

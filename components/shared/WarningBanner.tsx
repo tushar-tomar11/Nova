@@ -1,6 +1,5 @@
 import { IconButton } from '@components/shared/Button'
 import { XMarkIcon } from '@heroicons/react/20/solid'
-import Link from 'next/link'
 import useIpAddress from 'hooks/useIpAddress'
 
 const BANNER_WRAPPER_CLASSES =
@@ -49,14 +48,11 @@ export const BannerContent = ({
         <p className={`${TEXT_CLASSES} ${additionalTextClasses || ''}`}>
           {text}
         </p>
-        <Link
-          className={LINK_TEXT_CLASSES}
-          href="https://docs.nova.markets/risks"
-          onClick={onClickLink}
-          target="blank"
-        >
-          {linkText}
-        </Link>
+        {onClickLink ? (
+          <button className={LINK_TEXT_CLASSES} onClick={onClickLink}>
+            {linkText}
+          </button>
+        ) : null}
       </div>
       {onClose ? (
         <IconButton
