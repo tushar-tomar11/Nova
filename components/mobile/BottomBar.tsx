@@ -10,15 +10,11 @@ import {
   ChevronRightIcon,
   ArrowsRightLeftIcon,
   CurrencyDollarIcon,
-  BuildingLibraryIcon,
   ArrowTrendingUpIcon,
   MagnifyingGlassIcon,
   BanknotesIcon,
   PlusCircleIcon,
   ArchiveBoxArrowDownIcon,
-  NewspaperIcon,
-  ExclamationTriangleIcon,
-  DocumentTextIcon,
   ArrowTopRightOnSquareIcon,
 } from '@heroicons/react/20/solid'
 import SolanaTps from '@components/SolanaTps'
@@ -148,36 +144,6 @@ const MoreMenuPanel = ({
           title={t('common:vote')}
           path="/governance/vote"
           icon={<ArchiveBoxArrowDownIcon className="h-5 w-5" />}
-        />
-        <MoreMenuItem
-          title={t('learn')}
-          path="https://docs.nova.markets/"
-          icon={<DocumentTextIcon className="h-5 w-5" />}
-          isExternal
-        />
-        <MoreMenuItem
-          title={t('governance')}
-          path="https://dao.mango.markets/"
-          icon={<BuildingLibraryIcon className="h-5 w-5" />}
-          isExternal
-        />
-        {/* <MoreMenuItem
-          title={t('feedback-survey')}
-          path="https://forms.gle/JgV4w7SJ2kPH89mq7"
-          icon={<ClipboardDocumentIcon className="h-5 w-5" />}
-          isExternal
-        /> */}
-        <MoreMenuItem
-          title={t('terms-of-use')}
-          path="https://docs.nova.markets/legal"
-          icon={<NewspaperIcon className="h-5 w-5" />}
-          isExternal
-        />
-        <MoreMenuItem
-          icon={<ExclamationTriangleIcon className="h-5 w-5" />}
-          title={t('risks')}
-          path="https://docs.nova.markets/risks"
-          isExternal
         />
       </div>
     </div>

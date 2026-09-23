@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import {
   EllipsisHorizontalIcon,
-  BuildingLibraryIcon,
   ArrowTopRightOnSquareIcon,
   ChevronDownIcon,
   CurrencyDollarIcon,
@@ -10,11 +9,8 @@ import {
   ArrowTrendingUpIcon,
   MagnifyingGlassIcon,
   BanknotesIcon,
-  NewspaperIcon,
   PlusCircleIcon,
   ArchiveBoxArrowDownIcon,
-  ExclamationTriangleIcon,
-  DocumentTextIcon,
   Squares2X2Icon,
   BookOpenIcon,
   QueueListIcon,
@@ -390,46 +386,6 @@ const SideNav = ({ collapsed }: { collapsed: boolean }) => {
                   title={t('common:vote')}
                   pagePath="/governance/vote"
                   hideIconBg
-                />
-                <MenuItem
-                  collapsed={false}
-                  icon={<DocumentTextIcon className="h-4 w-4" />}
-                  title={t('documentation')}
-                  pagePath="https://docs.nova.markets"
-                  hideIconBg
-                  isExternal
-                />
-                <MenuItem
-                  collapsed={false}
-                  icon={<BuildingLibraryIcon className="h-4 w-4" />}
-                  title={t('governance')}
-                  pagePath="https://dao.mango.markets"
-                  hideIconBg
-                  isExternal
-                />
-                {/* <MenuItem
-                collapsed={false}
-                icon={<ClipboardDocumentIcon className="h-5 w-5" />}
-                title={t('feedback-survey')}
-                pagePath="https://forms.gle/JgV4w7SJ2kPH89mq7"
-                hideIconBg
-                isExternal
-              /> */}
-                <MenuItem
-                  collapsed={false}
-                  icon={<NewspaperIcon className="h-4 w-4" />}
-                  title={t('terms-of-use')}
-                  pagePath="https://docs.nova.markets/legal"
-                  hideIconBg
-                  isExternal
-                />
-                <MenuItem
-                  collapsed={false}
-                  icon={<ExclamationTriangleIcon className="h-4 w-4" />}
-                  title={t('risks')}
-                  pagePath="https://docs.nova.markets/risks"
-                  hideIconBg
-                  isExternal
                 />
               </ExpandableMenuItem>
             </div>
